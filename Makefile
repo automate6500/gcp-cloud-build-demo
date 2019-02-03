@@ -53,4 +53,4 @@ clean:
 	@rm -rf ./__pycache__ ./tests/__pycache__
 	@rm -f .*~ *.pyc
 
-.PHONY: lint test build run clean register
+.PHONY: build clean deploy help interactive lint run test unittest upload
