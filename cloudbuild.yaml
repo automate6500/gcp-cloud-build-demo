@@ -1,3 +1,5 @@
 steps:
 - name: 'python:3.6'
-  args: ['make','pip']
+  args: ['pip', 'install', '--quiet', '--upgrade', '--requirement', 'requirements.txt']
+- name: 'python:3.6'
+  args: ['/usr/bin/make', 'lint', 'unittest']
